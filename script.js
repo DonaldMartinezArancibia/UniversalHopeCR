@@ -22,12 +22,32 @@ function sidenavAnimation() {
 		count = false;
 	}
 }
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-	var x = document.getElementById("navDemo");
-	if (x.className.indexOf("w3-show") == -1) {
-		x.className += " w3-show";
-	} else {
-		x.className = x.className.replace(" w3-show", "");
+
+const bars_search = document.getElementById("ctn-bars-search");
+const cover_ctn = document.getElementById("cover-ctn-search");
+const inputSearch = document.getElementById("inputSearch");
+const box_search = document.getElementById("bos-search");
+
+function searchButton() {
+	if (count == false) {
+		bars_search.style.height = "3em";
+		cover_ctn.style.height = "100%";
+		cover_ctn.style.width = "100%";
+		cover_ctn.style.backgroundColor = "rgba(0,0,0,0.5)";
+		cover_ctn.style.transition = "background 1s ease-in"
+		inputSearch.focus();
+		count = true;
+	} else if (count == true) {
+		bars_search.style.height = "0";
+		cover_ctn.style.height = "0";
+		cover_ctn.style.backgroundColor = "#ffffff00";
+		inputSearch.value = "";
+		count = false;
 	}
+	// var x = document.getElementById("navDemo");
+	// if (x.className.indexOf("w3-show") == -1) {
+	// 	x.className += " w3-show";
+	// } else {
+	// 	x.className = x.className.replace(" w3-show", "");
+	// }
 }
