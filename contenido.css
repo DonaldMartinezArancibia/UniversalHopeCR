@@ -1,0 +1,95 @@
+main{
+    font-size: 15px;
+}
+main section article h2::before, main section article:nth-of-type(4) p::before{
+    font-family: "Font Awesome 5 Free";
+    font-size: 28px;
+    font-weight: 1;
+}
+main section article:nth-of-type(1) h2::before{
+    content: "\f044";
+    margin-right: 5px;
+}
+main section article:nth-of-type(2) h2::before{
+    content: "\f2b5";
+    margin-right: 5px;
+}
+main section article:nth-of-type(3) h2::before{
+    content: "\f06e";
+    margin-right: 5px;
+}
+main section article:nth-of-type(4) h2::before{
+    content: "\f005";
+    margin-right: 5px;
+}
+main section article:nth-of-type(4) p::before{
+    content: "\f559";
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 10px;
+}
+main section article:nth-of-type(4) img{
+    position: relative;
+    bottom: 67%;
+    left: 57%;
+    width: 7.5em;
+}
+main section article{
+    display: flex;
+    width: 96vw;
+    height: 12.3em;
+    margin: 1em auto;
+    background: #F89420;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main section article h2{
+    position: relative;
+    width: 50%;
+    top: 20px;
+    left: 40px;
+    z-index: 0;
+}
+main section article p{
+    width: 82%;
+    margin: auto auto auto 50px;
+    color: #fff;
+}
+main section article:nth-of-type(1){
+    border-radius: 0 0 6em 0;
+}
+main section article:nth-of-type(2){
+    border-radius: 0 0 0 6em;
+}
+main section article:nth-of-type(3){
+    border-radius: 0 6em 0 0;
+}
+main section article:nth-of-type(4){
+    border-radius: 6em 0 0 0;
+    justify-content: normal;
+}
+main section article:nth-of-type(4) p{
+    position: relative;
+    left: 3em;
+    top: 2em;
+    width: 50%;
+    margin: 0px 0px 16px 0px;
+}
+@media only screen and (min-width: 650px) {
+    main section {
+        display: grid;
+        grid: 50% 50% / 50% 50%;
+    }
+    main section article{
+        width: 20.3em;
+    }
+    main section article:nth-of-type(1),
+    main section article:nth-of-type(3){
+        margin: 2vw 1vw 0 3vw;
+    }
+    main section article:nth-of-type(2),
+    main section article:nth-of-type(4){
+        margin: 2vw 3vw 0 1vw;
+        justify-self: end;
+    }
+}
