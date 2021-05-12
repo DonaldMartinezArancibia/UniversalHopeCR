@@ -367,17 +367,17 @@ main #marcas-y-socios article div img{
     height: 100%;
     padding: 10px;
 }
-main #marcas-y-socios article div:nth-of-type(6) {
+main #marcas-y-socios article div:nth-of-type(8) {
     justify-content: center;
     display: flex;
     margin:10px;
 }
-main #marcas-y-socios article div:nth-of-type(6) img{
+main #marcas-y-socios article div:nth-of-type(8) img{
     width: auto;
     padding: 5px;
 }
-main #marcas-y-socios article div:nth-of-type(11) img,
-main #marcas-y-socios article div:nth-of-type(12) img{
+main #marcas-y-socios article div:nth-of-type(17) img,
+main #marcas-y-socios article div:nth-of-type(18) img{
     display: none;
 }
 footer{
@@ -452,7 +452,7 @@ footer > :nth-child(6) i{
         height: unset;
     }
     main #marcas-y-socios article{
-        animation: scrollImg 50s infinite linear;
+        animation: scrollImg 40s infinite linear;
     }
     main #marcas-y-socios{
         height: 200px;
